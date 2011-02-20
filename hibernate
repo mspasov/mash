@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Force hibernation once and return to sleep mode
+
+
+if [ $UID != 0 ]
+	then
+		echo "$0 requires root"
+	exit
+fi
+
+pmset -a hibernatemode 1
+/usr/bin/osascript -e 'tell application "System Events" to sleep'
+sleep 10
+pmset -a hibernatemode 0
+
