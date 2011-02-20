@@ -1,1 +1,3 @@
-Useful MacOS shell scripts...
+A collection of useful MacOS shell scripts.
+
+	hibernate - hibernate (hibernatemode 1) the computer. Upon wake up hibernatemode 0 is set. (sleep).
