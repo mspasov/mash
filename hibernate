@@ -9,7 +9,8 @@ if [ $UID != 0 ]
 	exit
 fi
 
-pmset -a hibernatemode 1
+#use hibernatemode 25 for fastest hibernation
+pmset -a hibernatemode 25
 #/usr/bin/osascript -e 'tell application "System Events" to sleep'
 pmset sleepnow
 sleep 10
